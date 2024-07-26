@@ -1,0 +1,9 @@
+<h2>{{ title }}</h2>
+
+<!-- <ul>
+  <li *ngFor="let user of users">{{ user.id }} {{ user.userName }}</li>
+</ul> -->
+
+@for (user of users; track $index) {
+<li>{{ user.id }} - {{ user.userName }}</li>
+}
