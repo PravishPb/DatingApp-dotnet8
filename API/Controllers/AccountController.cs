@@ -37,7 +37,6 @@ public class AccountController(DataContext context, ITokenService tokenService) 
 
   }
 
-
   [HttpPost("login")]
   public async Task<ActionResult<UserDto>> Login(LoginDto loginDto)
   {

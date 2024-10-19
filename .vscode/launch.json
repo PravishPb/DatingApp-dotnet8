@@ -5,6 +5,13 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Launch Chrome",
+      "request": "launch",
+      "type": "chrome",
+      "url": "https://localhost:4200",
+      "webRoot": "${workspaceFolder}/client"
+    },
+    {
       "name": ".NET Core Attach",
       "type": "coreclr",
       "request": "attach"
@@ -14,6 +21,12 @@
       "type": "dotnet",
       "request": "launch",
       "projectPath": "${workspaceFolder}/API.csproj"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "(.NET + ANGULAR)",
+      "configurations": [".NET Core Attach", "Launch Chrome"]
     }
   ]
 }
